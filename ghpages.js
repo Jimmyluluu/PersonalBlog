@@ -10,7 +10,7 @@ const options = {
 
 const callback = err => {
 
-    if (err) console.error(err);
+    if (err) console.error(error);
     else console.log('publish success');
 };
 
