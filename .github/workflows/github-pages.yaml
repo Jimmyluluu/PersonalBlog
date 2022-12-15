@@ -1,0 +1,28 @@
+
+name: Build Test
+
+on:
+  push:
+  pull_request:
+    branches: master
+
+jobs:
+  build:
+    name: Build Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "19"
+      - name: Setup Project
+        run: yarn
+      - name: Build Project
+        run: yarn build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
+          publish_dir: ./public  
