@@ -5,7 +5,7 @@
       dense
       dark
     >
-    <v-toolbar-title>HomePage</v-toolbar-title>
+    <v-toolbar-title>Jimmy Lu</v-toolbar-title>
       <v-spacer></v-spacer>
 
       <v-btn
@@ -29,13 +29,8 @@ import HomePage from './components/HomePage';
 
 export default {
   name: 'App',
-
   components: {
     HomePage,
   },
-
-  data: () => ({
-    //
-  }),
 };
 </script>

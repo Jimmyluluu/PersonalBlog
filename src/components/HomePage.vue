@@ -1,6 +1,6 @@
 <template>
   <v-app>
-
+    <h1>{{ message }}</h1>
   </v-app>
 </template>
 
@@ -8,7 +8,7 @@
   export default {
     data() {
       return {
-        drawer: true
+        message: "change"
       }
     }
   }
