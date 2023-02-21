@@ -1,6 +1,10 @@
 <template>
   <v-app>
-    <h1>{{ message }}</h1>
+    <v-divider :thickness="4" color="info"></v-divider>
+      <h1>
+        {{ message }}
+      </h1>
+
   </v-app>
 </template>
 
@@ -8,7 +12,7 @@
   export default {
     data() {
       return {
-        message: "change"
+        message: "Hi"
       }
     }
   }

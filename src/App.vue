@@ -5,15 +5,22 @@
       dense
       dark
     >
-    <v-toolbar-title>Jimmy Lu</v-toolbar-title>
+    <v-toolbar-title> Jimmy Personal Blog </v-toolbar-title>
       <v-spacer></v-spacer>
-
+      <v-btn        
+        href="https://www.instagram.com/luukimo_0711"
+        target="_blank"
+        text>
+        <span class="mr-1">Instagram</span>
+      </v-btn>
       <v-btn
         href="https://github.com/Jimmyluluu"
         target="_blank"
         text
       >
-        <span class="mr-2">Github</span>
+        <span class="mr-1">Github</span>
+      </v-btn>
+      <v-btn>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
