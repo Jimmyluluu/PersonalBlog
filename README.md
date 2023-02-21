@@ -1,4 +1,4 @@
-# my-first-vue
+# PersonalBlogs
 
 ## Project setup
 ```
