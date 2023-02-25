@@ -1,43 +1,30 @@
-<template>
-  <v-app>
-    <v-app-bar
-      color="light-gray accent-4"
-      dense
-      dark
-    >
-    <v-toolbar-title> Jimmy Personal Blog </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn        
-        href="https://www.instagram.com/luukimo_0711"
-        target="_blank"
-        text>
-        <span class="mr-1">Instagram</span>
-      </v-btn>
-      <v-btn
-        href="https://github.com/Jimmyluluu"
-        target="_blank"
-        text
-      >
-        <span class="mr-1">Github</span>
-      </v-btn>
-      <v-btn>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-    </v-app-bar>
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+</script>
 
-    <v-main>
-      <HomePage/>
-    </v-main>
-  </v-app>
+<template>
+  <div>
+    <a href="https://vitejs.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    </a>
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
+    </a>
+  </div>
+  <HelloWorld msg="Vite + Vue" />
 </template>
 
-<script>
-import HomePage from './components/HomePage';
-
-export default {
-  name: 'App',
-  components: {
-    HomePage,
-  },
-};
-</script>
+<style scoped>
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vue:hover {
+  filter: drop-shadow(0 0 2em #42b883aa);
+}
+</style>
