@@ -4,5 +4,5 @@ import HelloWorld from "./components/HomePage.vue";
 
 <template>
   <div></div>
-  <HelloWorld/>
+  <HelloWorld />
 </template>
