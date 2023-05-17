@@ -1,41 +1,6 @@
 <template>
-  <div class="bg-auto bg-gray-300 min-h-screen">
-    <h1 class="text-2xl text-gray-800 font-bold">{{ title }}</h1>
-    <header class="">
-      <div class="nav-container flex justify-end">
-        <nav>
-          <ul class="inline-flex">
-            <li v-for="item in items">
-              <a :href="item.http" class="px-4 hover:bg-gray-800">{{
-                item.name
-              }}</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <main
-      v-for="post in posts"
-      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 body"
-    >
-      <article class="bg-white shadow overflow-hidden sm:rounded-lg mb-8">
-        <div class="px-4 py-5 sm:px-6">
-          <h2 class="text-2xl font-bold mb-2">{{ post.title }}</h2>
-          <p class="text-sm text-gray-500 mb-2">
-            Author: {{ post.author }} | Date: {{ post.date }}
-          </p>
-        </div>
-        <div class="px-4 py-5 sm:p-6">
-          <p class="text-base">{{ post.content }}</p>
-          <a href="#" class="text-blue-600 font-bold hover:underline"
-            >Read more...</a
-          >
-        </div>
-      </article>
-    </main>
-
-    <footer class="bottom-0 w-full bg-gray-900 text-gray-200 text-center py-2">
+  <header class="bg-white">
+    <div class="nav-container flex justify-end">
       <nav>
         <ul class="inline-flex">
           <li v-for="item in items">
@@ -43,12 +8,48 @@
               item.name
             }}</a>
           </li>
-          <p>&copy; 2023 Jimmy Lu</p>
         </ul>
       </nav>
-    </footer>
+    </div>
+  </header>
+
+  <div class="bg-auto bg-gray-300 flex-grow">
+    <div class="row">
+      <div class="mx-auto py-4">
+        <h1 class="text-2xl font-bold mb-4">{{ title }}</h1>
+        <p class="text-gray-700 mb-4"></p>
+      </div>
+      <div class="flex flex-col gap-5">
+        <section v-for="post in posts" class="px-4 sm:px-6 lg:px-8">
+          <article class="bg-white shadow overflow-hidden rounded-lg pb-8">
+            <div class="px-4 py-5 sm:px-6">
+              <h2 class="text-2xl font-bold mb-2">{{ post.title }}</h2>
+              <p class="text-sm text-gray-500 mb-2">
+                Author: {{ post.author }} | Date: {{ post.date }}
+              </p>
+            </div>
+            <div class="px-4 py-5 sm:p-6">
+              <p class="text-base">{{ post.content }}</p>
+              <a href="#" class="text-blue-600 font-bold hover:underline">Read more...</a>
+            </div>
+          </article>
+        </section>
+      </div>
+
+    </div>
+    <div class="h-12" />
   </div>
+
+
+  <footer class="w-full bg-gray-900 text-gray-200 text-center py-2">
+    <nav>
+      <p class="inline-flex">
+      <p>&copy; 2023 Jimmy Lu</p>
+      </p>
+    </nav>
+  </footer>
 </template>
+
 
 <script>
 export default {
@@ -92,9 +93,9 @@ export default {
 </script>
 
 <style>
-html,
+/* html,
 body {
   height: 100%;
-  background-color: #f7fafc;
-}
+  background-color: #e0921e;
+} */
 </style>
