@@ -4,8 +4,8 @@ COPY . /vue-project
 
 WORKDIR /vue-project
 
-RUN yarn install
+RUN npm install
 
-EXPOSE 5173
+EXPOSE 5174
 
-CMD ["yarn", "serve"]
+CMD ["npm", "run", "dev"]
