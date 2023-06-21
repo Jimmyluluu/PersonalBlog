@@ -1,22 +1,20 @@
 <template>
-  <header class="bg-white">
-    <div class="nav-container flex justify-end">
-      <nav>
-        <ul class="inline-flex">
-          <li v-for="item in items">
-            <a :href="item.http" class="px-4 hover:bg-gray-800">{{
-              item.name
-            }}</a>
-          </li>
-        </ul>
-      </nav>
+  <header class="bg-stone-800 py-4 justify-items-start">
+    <div class="flex ">
+      <div v-for="item in items">
+        <a :href="item.http" class="text-cyan-50 px-5 hover:bg-gray-400">{{
+          item.name
+        }}</a>
+      </div>
+      <div class="flex">
+        <a class="text-cyan-50 hover:bg-gray-400 px-3" @click="add">+</a>
+      </div>
     </div>
   </header>
 
   <div class="bg-auto bg-gray-300 flex-grow">
     <div class="row">
       <div class="mx-auto py-4">
-        <h1 class="text-2xl font-bold mb-4">{{ title }}</h1>
         <p class="text-gray-700 mb-4"></p>
       </div>
 
