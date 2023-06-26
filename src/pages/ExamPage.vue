@@ -1,13 +1,9 @@
 <template>
   <div>
-    <Markdown :source="source" />
-    <Markdown :source="Test" />
+    <h1> hello world</h1>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import Markdown from 'vue3-markdown-it';
 
-const source = ref('- Hello World!');
 </script>
