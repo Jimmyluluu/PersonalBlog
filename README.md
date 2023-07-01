@@ -4,4 +4,4 @@
 
 緩慢更新中
 
-使用 Vue 3 + Vite
+使用 Vue 3 + Vite + tailwind CSS
