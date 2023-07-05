@@ -7,7 +7,7 @@
           <article
             class="bg-slate-100 py-3 shadow overflow-hidden rounded-lg pb-8"
           >
-            <div class="px-2 py-2 sm:px-4">
+            <div class="px-4 py-2">
               <h2 class="text-2xl text-gray-800 font-bold mb-2">
                 {{ post.title }}
               </h2>
@@ -15,7 +15,7 @@
                 {{ post.date }}
               </p>
             </div>
-            <div class="px-2 py-2 sm:p-4">
+            <div class="px-4 py-2">
               <p class="text-base text-gray-800">{{ post.content }}</p>
               <router-link
                 class="text-blue-300 font-bold hover:underline"
