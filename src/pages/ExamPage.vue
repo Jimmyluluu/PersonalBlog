@@ -37,8 +37,8 @@ function updateNumber() {
   const month = currentDate.getMonth() + 1;
   const day = currentDate.getDate();
   const dateString = `${year}-${month}-${day}`;
-  const timestamp = (new Date(dateString).getTime() / 1000);
-  const days = Math.floor((timestamp - 1688313600) / (24 * 60 * 60))
+  const timestamp = new Date(dateString).getTime() / 1000;
+  const days = Math.floor((timestamp - 1688313600) / (24 * 60 * 60));
   number.value = number.value + days;
 }
 </script>
