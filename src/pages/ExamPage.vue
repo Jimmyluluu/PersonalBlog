@@ -20,7 +20,13 @@
         </tr>
       </tbody>
     </table>
-    <h1 class="text-gray-800">考試準備第 {{ number }} 天</h1>
+    <h1 class="text-gray-800 py-5">考試準備第 {{ number }} 天</h1>
+    <div>
+      <img
+        src="https://media.giphy.com/media/Lopx9eUi34rbq/giphy.gif"
+        alt="this slowpoke moves"
+      />
+    </div>
   </div>
 </template>
 
