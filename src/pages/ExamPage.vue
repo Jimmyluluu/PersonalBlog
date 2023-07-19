@@ -42,9 +42,10 @@ function updateNumber() {
   const year = currentDate.getFullYear();
   const month = currentDate.getMonth() + 1;
   const day = currentDate.getDate();
-  const dateString = `${year}-${month}-${day}`;
+  const dateString = `${year},${month},${day}`;
   const timestamp = new Date(dateString).getTime() / 1000;
-  const days = Math.floor((timestamp - 1688313600) / (24 * 60 * 60));
+  const days = Math.floor((timestamp - 1688313600) / (24 * 60 * 60))
   number.value = number.value + days;
 }
 </script>
+<style>  iframe { width: 100%; height: 500px; border: 2px solid #ccc; border-radius: 10px; padding: none; }  </style>
