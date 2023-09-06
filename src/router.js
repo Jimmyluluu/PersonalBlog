@@ -3,7 +3,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "./pages/HomePage.vue";
 import Exam from "./pages/ExamPage.vue";
 import List from "./pages/ListPage.vue";
-import AboutThisBlog from "./pages/AboutThisBlog.vue";
+import AboutThisBlog from "./article/AboutThisBlog.vue";
+import IOOperations from "./article/IOOperations.vue";
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: "/aboutthisblog",
     name: "AboutThisBlog",
     component: AboutThisBlog,
+  },
+  {
+    path: "/iooperations",
+    name: "IOOperations",
+    component: IOOperations,
   },
 ];
 

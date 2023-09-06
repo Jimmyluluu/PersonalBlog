@@ -19,7 +19,7 @@
               <p class="text-base text-gray-800">{{ post.content }}</p>
               <router-link
                 class="text-blue-300 font-bold hover:underline"
-                to="/aboutthisblog"
+                :to="`${post.url}`"
                 >Read more...</router-link
               >
             </div>
@@ -37,6 +37,13 @@ const posts = ref([
     title: "關於這個部落格",
     date: "Create at 2023/06/28",
     content: "關於這個部落格",
+    url: "/aboutthisblog",
+  },
+  {
+    title: "作業系統的 I/O Operations",
+    date: "Create at 2023/09/01",
+    content: "此篇將描述 Polling I/O vs Interrupted I/O，並且描述 DMA",
+    url: "/IOOperations",
   },
 ]);
 const items = ref([
