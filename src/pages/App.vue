@@ -28,10 +28,10 @@
   >
     <a class="px-5">&copy; 2023 Jimmy Lu</a>
     <a href="https://github.com/Jimmyluluu" class="px-5">Github</a>
-    <a
+    <!--<a
       href="https://www.linkedin.com/in/%E6%95%AC%E5%85%83-%E9%AD%AF-38787b265/"
       class="px-5"
       >Linkedin</a
-    >
+    >-->
   </footer>
 </template>
