@@ -1,7 +1,8 @@
 <template>
-  <div class="bg-auto px-10">
+  <br />
+  <div class="bg-auto">
     <div class="px-10">
-      <div class="bg-slate-100 rounded-lg flex justify-center px-100 py-10">
+      <div class="bg-slate-100 rounded-lg flex justify-center px-100 py-5">
         <article class="prose max-w-none justify-center px-10">
           <h2 class="text-gray-800">{{ posts.title }}</h2>
           <p class="text-s text-gray-500">{{ posts.date }}</p>
@@ -12,9 +13,10 @@
           <h3 class="text-gray-800">Interrupt I/O</h3>
           <h4 class="text-gray-800">流程</h4>
           <ol>
-          <li class="text-gray-800">
-            當 CPU 偵測到有中斷訊號 om Interrupt-request line CPU 會通知 kernel
-          </li>          
+            <li class="text-gray-800">
+              當 CPU 偵測到有中斷訊號 om Interrupt-request line CPU 會通知
+              kernel
+            </li>
           </ol>
           <h3 class="text-gray-800">Polling I/O</h3>
           <h3 class="text-gray-800">DMA</h3>

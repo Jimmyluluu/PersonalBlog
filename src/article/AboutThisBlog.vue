@@ -1,7 +1,8 @@
 <template>
-  <div class="bg-auto px-10">
+  <br />
+  <div class="bg-auto">
     <div class="px-10">
-      <div class="bg-slate-100 rounded-lg flex justify-center px-100 py-10">
+      <div class="bg-slate-100 rounded-lg flex justify-center px-100 py-5">
         <article class="prose max-w-none justify-center px-10">
           <h2 class="text-gray-800 font-bold">{{ posts.title }}</h2>
           <p class="text-s text-gray-500">{{ posts.date }}</p>
